@@ -1,12 +1,11 @@
 """
-Trains model on specific range of slices in input array
+Trains model on % of voxels in the input array
     uses selected input file
     outputs trained model as .pkl
 Logistic regression model with Cross Validation
     Models IR data and Laser Power vs CT thresholds
     includes CT class balancing with SMOTE
 used to test binary datasets
-Section 3 in SFF manuscript for Model Development
 """
 
 import time
@@ -41,11 +40,11 @@ def traverse_datasets(hdf_file):
 # ENTER PATHS and FILENAMES HERE!
 
 # name of the test part
-# test_part = 'Part-1'
-test_part = 'Part-2'
+# trained_part = 'Part-1'
+trained_part = 'Part-2'
 
 # name of starting section of part
-part_section = 'Cylinder'
+trained_section = 'Cylinder'
 
 # what percentage of the part to train on
 train_size = .01
@@ -57,19 +56,19 @@ features = '4'
 model_type = 'LogRegCV'
 
 # export model?
-export_model = 'yes'
-# export_model = 'no'
+# export_model = 'yes'
+export_model = 'no'
 
 ##################################################
 
 # file name of the dream3d dataset
-f_name = f'19b_{test_part} {part_section}'
+f_name = f'19b_{trained_part} {trained_section}'
 
 # convert train_size to string
 str_train_size = str(int(train_size*100))
 
 # data name for export and chart titles
-data_name = f'{test_part}_{str_train_size}pct_{part_section}_{model_type}_{features}'
+data_name = f'{trained_part}_{str_train_size}pct_{trained_section}_{model_type}_{features}'
 
 tic = time.perf_counter()
 
