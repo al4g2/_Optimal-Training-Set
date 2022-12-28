@@ -47,8 +47,11 @@ trained_section = 'Cylinder'
 # what layers of the part to train on
 #   whole cylinder is 0:970
 #   M section is 286:342
+#   S&T section is 582:705
+#   T section is 649:705
+#   O section is 435:491
 l1 = 286
-l2 = 342
+l2 = 705
 
 # which feature model to use
 features = '4'
