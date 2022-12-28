@@ -13,60 +13,49 @@ True values are scored vs the binary regional array
 import h5py
 import pandas as pd
 import numpy as np
-from sklearn.metrics import confusion_matrix, classification_report, precision_score, recall_score, f1_score
 from collections import Counter
+from MetricsReport import metrics_report
 
 
 ##################################################
 # ENTER PATHS and FILENAMES HERE!
 
-# which part to use?
-partnum = 'Part-1'
-# partnum = 'Part-2'
+# TRAINING
+trained_part = 'Part-2'
+train_size = '1'  # percentage of part section used for training
+# train_size = '99'
+trained_section = 'Cylinder'
+model_type = 'LogRegCV'  # model type used for training
+features = '4'  # feature model that was used for training
 
-# which section of the part
-# section = 'NomA'
-# section = 'Center'
-section = 'NomB'
+# TESTING
+test_part = 'Part-1'
+# test_part = 'Part-2'
+# test_section = 'Cylinder'
+# test_section = 'NomA'
+test_section = 'Center'
+# test_section = 'NomB'
 
 # array names; from DREAM.3D
 true = 'CTB1'
-pred = f'CTpred {partnum}_Cylinder Cropped_trained_on_21b_Part-2_19b_Cylinder Cropped_LogRegCV_40'
-reg = 'Pred Regional'
-bb = 'Pred Binomial Blur'
+pred = f'CTpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
+reg = f'REGpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
 msk = 'Extended Center Mask'
 
 # filename
-fname = '23_Predictions'
+fname = f'23_{test_part} {test_section} Predictions'
 
 ##################################################
 
 
-# Standard metrics report; prints Confusion Matrix and Classification Report
-def metrics_report(y_true, y_pred, title):
-    # Confusion Matrix
-    cm = confusion_matrix(y_true, y_pred)
-    print(f'\nConfusion matrix, {title}: \n %s' % cm)
-
-    # precision/ recall/ f1
-    print('precision: ', precision_score(y_true, y_pred))
-    print('recall: ', recall_score(y_true, y_pred))
-    print('f1-score: ', f1_score(y_true, y_pred))
-
-    # Compute classification report
-    # print(f'\nClassification Report, {title}: \n %s' % classification_report(y_true, y_pred))
-
-
 # read dream3d file as hdf
-f = h5py.File(f'{partnum}/{fname} {section}.dream3d', 'r')
+f = h5py.File(f'{fname}.dream3d', 'r')
 # CTB1: True Defects
 truedefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{true}']
 # Predicted Defects array
 preddefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{pred}']
 # Regional Scoring array
 regionaldefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{reg}']
-# Binomial Blur array
-binomialblur = f[f'DataContainers/Fusion/Fused Attribute Matrix/{bb}']
 # Mask array
 mask = f[f'DataContainers/Fusion/Fused Attribute Matrix/{msk}']
 
@@ -74,7 +63,6 @@ mask = f[f'DataContainers/Fusion/Fused Attribute Matrix/{msk}']
 truedefects = np.array(truedefects[:, :, :, 0])
 preddefects = np.array(preddefects[:, :, :, 0])
 regionaldefects = np.array(regionaldefects[:, :, :, 0])
-binomialblur = np.array(binomialblur[:, :, :, 0])
 mask = np.array(mask[:, :, :, 0])
 
 
@@ -95,7 +83,8 @@ true = df.loc[:, 'true'].values
 pred = df.loc[:, 'pred'].values
 region = df.loc[:, 'region'].values
 
-print(f'{partnum} {section}')
+print(f'test part: {test_part}_{test_section}')
+print('model name: ', f'21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}.pkl')
 
 
 print('True shape: %s' % Counter(true))

@@ -1,0 +1,837 @@
+{
+    "0": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Pipeline Annotation",
+        "Filter_Name": "PipelineAnnotation",
+        "Filter_Uuid": "{8cc2198b-6a9d-5bf4-b8c0-b0878bb57f10}",
+        "Summary": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8.25pt;\">Crops a cylinder across the length of the part. </span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8.25pt;\">Need HDF5 created by 19a_Extend Center Mask.py to use as a mask for the desired section. </span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8.25pt;\">Only need to filter TAT becuase rows where TAT value is zero are removed later.</span></p></body></html>"
+    },
+    "1": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Read DREAM.3D Data File",
+        "Filter_Name": "DataContainerReader",
+        "Filter_Uuid": "{043cbde5-3878-5718-958f-ae75714df0df}",
+        "InputFile": "C:\\Users\\al4g2\\Documents\\_SFF2022\\Part-1\\15_Fusion.dream3d",
+        "InputFileDataContainerArrayProxy": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Binomial Blur CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Binomial Blur TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Binomial Blur Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Black Top Hat CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Black Top Hat TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Black Top Hat Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Bounded Reciprocal CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Bounded Reciprocal TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Bounded Reciprocal Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Box Mean CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Box Mean TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Box Mean Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CT Mask",
+                                    "Object Type": "DataArray<bool>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CTB1",
+                                    "Object Type": "DataArray<uint8_t>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CoolingRate",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Density",
+                                    "Object Type": "DataArray<float>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Convex CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Convex TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Convex Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Maxima CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Maxima TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Maxima Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Minima CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Minima TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "H Minima Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Laser Power",
+                                    "Object Type": "DataArray<float>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Log10 CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Log10 TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Log10 Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "MaxTemp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median CR 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median CR 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median CR 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median TAT 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median TAT 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median TAT 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median Tp 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median Tp 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Median Tp 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "White Top Hat CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "White Top Hat TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "White Top Hat Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "X",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Y",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Z",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        1002
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "OverwriteExistingDataContainers": 0
+    },
+    "2": {
+        "Dataset Import Info Array": [
+            {
+                "Component Dimensions": "1",
+                "Dataset Path": "/Extended Center Mask"
+            }
+        ],
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Import HDF5 Dataset",
+        "Filter_Name": "ImportHDF5Dataset",
+        "Filter_Uuid": "{9e98c3b0-5707-5a3b-b8b5-23ef83b02896}",
+        "HDF5FilePath": "C:\\Users\\al4g2\\Documents\\_SFF2022\\Part-1\\19a_Extend Center Mask.h5",
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "3": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        },
+        "CellFeatureAttributeMatrixPath": {
+            "Attribute Matrix Name": "CellFeatureData",
+            "Data Array Name": "",
+            "Data Container Name": "ImageDataContainer"
+        },
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "FeatureIds",
+            "Data Container Name": "ImageDataContainer"
+        },
+        "FilterVersion": "6.6.141",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Crop Geometry (Image)",
+        "Filter_Name": "CropImageGeometry",
+        "Filter_Uuid": "{baa4b7fe-31e5-5e63-a2cb-0bb9d844cfaf}",
+        "NewDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "NewImageDataContainer"
+        },
+        "RenumberFeatures": 0,
+        "SaveAsNewDataContainer": 0,
+        "UpdateOrigin": 1,
+        "XMax": 69,
+        "XMin": 0,
+        "YMax": 84,
+        "YMin": 0,
+        "ZMax": 970,
+        "ZMin": 10
+    },
+    "4": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "TAT",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "5": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTB1",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "6": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Optimal-Training-Set/19b_Part-1 Cylinder.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
+    "PipelineBuilder": {
+        "Name": "19b_Part-1 Cylinder",
+        "Number_Filters": 7,
+        "Version": 6
+    }
+}

@@ -47,22 +47,22 @@ def logreg_cv(X_train, X_test, y_train, feature_cols, data_name):
     y_pred = classifier.predict(X_test)  # Predicting test set results
     # print('y_pred shape: %s' % Counter(y_pred))
 
-    # feature importance
-    coefficients = classifier.coef_[0]
-    print('coefficients', coefficients)
-    # summarize coefficients
-    sort_cos = pd.DataFrame()
-    for i, v in enumerate(coefficients):
-        add = pd.DataFrame([feature_cols[i], v])
-        add = add.T
-        sort_cos = sort_cos.append(add)
-    sort_cos.columns = ['Features', 'Coefficients']
-    s_coefficients = sort_cos.sort_values('Coefficients', ascending=False)
-    # print(s_coefficients)
-    ax = s_coefficients.plot.bar()
-    plt.xticks([x for x in range(len(coefficients))], s_coefficients.iloc[:, 0])
-    plt.title(f'Feature Coefficients (normalized)\n{data_name}')
-    plt.show()
+    # # feature importance
+    # coefficients = classifier.coef_[0]
+    # print('coefficients', coefficients)
+    # # summarize coefficients
+    # sort_cos = pd.DataFrame()
+    # for i, v in enumerate(coefficients):
+    #     add = pd.DataFrame([feature_cols[i], v])
+    #     add = add.T
+    #     sort_cos = sort_cos.append(add)
+    # sort_cos.columns = ['Features', 'Coefficients']
+    # s_coefficients = sort_cos.sort_values('Coefficients', ascending=False)
+    # # print(s_coefficients)
+    # ax = s_coefficients.plot.bar()
+    # plt.xticks([x for x in range(len(coefficients))], s_coefficients.iloc[:, 0])
+    # plt.title(f'Feature Coefficients (normalized)\n{data_name}')
+    # plt.show()
 
     return y_pred, classifier
 

@@ -14,6 +14,7 @@ import pandas as pd
 import numpy as np
 from FeatureList import feature_list
 from MetricsReport import metrics_report
+from CreateHDF import output_hdf
 
 
 # opens all keys in the hdf5 (dream3d) file
@@ -33,88 +34,61 @@ def traverse_datasets(hdf_file):
 # returns z_crop layer based on the cropping of each part/section combo
 def crop_layer(p, s):
     if p == 'Part-1':
-        if s == 'NomA':
-            return 0
-        elif s == 'Center':
-            return 276
-        elif s == 'NomB':
-            return 694
-        elif s == 'Cylinder Cropped':
+        if s == 'Cylinder':
             return 10
-    if p == 'Part-2':
-        if s == 'NomA':
-            return 0
+        elif s == 'NomA':
+            return 10
         elif s == 'Center':
             return 286
         elif s == 'NomB':
-            return 706
+            return 704
         elif s == 'Cylinder Cropped':
             return 10
-
-
-# function to export array as hdf file
-def hdf_array(data_array, output_shape, z_c, folder, name):
-    hdf_out = np.zeros(output_shape)  # initialize return array
-    # print('hdf_out.shape: ', hdf_out.shape)
-    a2 = np.column_stack((data_array.X, data_array.Y, data_array.Z, data_array.pred))  # 2D array
-    # print(f'a2:\n{a2}')
-    # subtract 1 from x, y, z value as the array is 0-base
-    for row in a2:
-        row[0] = row[0] - 1
-        row[1] = row[1] - 1
-        row[2] = row[2] - 1
-    # convert values in predict_results in integer
-    a2 = a2.astype(int)
-    # build 3d matrix, hdf_out
-    for row in a2:
-        i = row[0]
-        j = row[1]
-        k = row[2] - z_c
-        hdf_out[k, j, i] = row[3]  # 3D array
-    # create HDF file output
-    hf = h5py.File(f'{folder}/22_{name}.h5', 'w')
-    hf.create_dataset(f'CTpred {name}', data=hdf_out)
+    if p == 'Part-2':
+        if s == 'Cylinder':
+            return 10
+        elif s == 'NomA':
+            return 10
+        elif s == 'Center':
+            return 296
+        elif s == 'NomB':
+            return 716
+        elif s == 'Cylinder Cropped':
+            return 10
 
 
 ##################################################
 # ENTER PATHS and FILENAMES HERE!
 
-# name of the section the model was trained on
+# TRAINING
 trained_part = 'Part-2'
-# trained_section = 'Center'
-trained_section = 'Cylinder Cropped'
+train_size = '99'  # percentage of part section used for training
+trained_section = 'Cylinder'
+model_type = 'LogRegCV'  # model type used for training
+features = '4'  # feature model that was used for training
 
-# name of the section to be tested
+# TESTING
 test_part = 'Part-1'
 # test_part = 'Part-2'
+test_section = 'Cylinder'
 # test_section = 'NomA'
 # test_section = 'Center'
-# test_section = 'Cylinder Cropped'
-test_section = 'NomB'
-
-# which feature model to use
-features = '40'
-
-# model type that was used for training
-# model_type = 'LogReg'
-model_type = 'LogRegCV'
-# model_type = 'MLP'
-# model_type = 'GradientBoosting'
-# model_type = 'RandomForest'
+# test_section = 'NomB'
 
 # LogReg threshold
 slcthresh = [0.85]
 
 ##################################################
 
-
-data_name = f'{test_part}_{test_section}_trained_on_21b_{trained_part}_19b_{trained_section}_{model_type}_{features}'
+# data name for export and chart titles
+data_name = f'{test_part}_{test_section}_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
+print(f'test part: {test_part}_{test_section}')
 
 # starting layer of each test part/section combo
 z_crop = crop_layer(test_part, test_section)
 
 # Load trained model from file
-model_filename = f'21b_{trained_part}_19b_{trained_section}_{model_type}_{features}.pkl'
+model_filename = f'21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}.pkl'
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
 print('model name: ', model_filename)
@@ -123,7 +97,7 @@ print('model name: ', model_filename)
 # load test dataset
 d = pd.DataFrame()  # define DataFrame, d
 # traverse data file and open all arrays in the 'Fused Attribute Matrix'
-with h5py.File(f'{test_part}/19b_{test_section}.dream3d', 'r') as f5Im:
+with h5py.File(f'19b_{test_part} {test_section}.dream3d', 'r') as f5Im:
     # add each raveled array as column to DataFrame
     for w, dset in enumerate(traverse_datasets(f5Im)):
         if dset.startswith('/DataContainers/Fusion/Fused Attribute Matrix/'):
@@ -131,10 +105,10 @@ with h5py.File(f'{test_part}/19b_{test_section}.dream3d', 'r') as f5Im:
             d[dset[46:]] = np.ravel(f5Im[f'{dset}'])
     # shape of test dataset (used to export HDF)
     hdf_shape = np.array(f5Im['/DataContainers/Fusion/Fused Attribute Matrix/CTB1'][:, :, :, 0]).shape
-    # print('hdf_shape: ', hdf_shape)
+    print('test hdf_shape: ', hdf_shape)
 
-# rename the "CTB1 Regional Scoring" key
-d.rename(columns={'CTB1 Regional Scoring': 'Regional'}, inplace=True)
+# # rename the "CTB1 Regional Scoring" key
+# d.rename(columns={'CTB1 Regional Scoring': 'Regional'}, inplace=True)
 
 # print the keys of the created dataframe
 # print(f'DataFrame keys: {d.keys()}')
@@ -152,12 +126,6 @@ X = d[feature_cols]  # features
 # print('Inputs: ', feature_cols)
 
 
-# PREDICTION PROBABILITY
-predp = model.predict_proba(X)[:, 1] * 100  # probability of one
-# output hdf with predict results
-# hdf_array(predp, 'Probability')
-
-
 # BINARY PREDICTIONS at different thresholds (0.5 is the standard)
 if model_type == 'LogReg' or 'LogRegCV':
     pred = np.where(model.predict_proba(X)[:, 1] >= slcthresh, 1, 0)
@@ -167,14 +135,15 @@ else:
 # add predictions as column in DataFrame
 d['pred'] = pred
 # print('d.shape: ', d.shape)
+# print(d['Z'])
+
+# print the keys of the created dataframe
+# print(f'DataFrame keys: {d.keys()}')
 
 # metrics report for predictions
-print('\n\nTrue Score of Predictions: \n')
-metrics_report(y, pred, data_name)
+# print('\n\nTrue Score of Predictions: \n')
+metrics_report(d['CTB1'], d['pred'], data_name)
 
-# metrics report for Regions
-print('\n\nRegional Score of Predictions: \n')
-metrics_report(d.Regional, pred, data_name)
 
 # output hdf with predict results
-# hdf_array(d, hdf_shape, z_crop, test_part, data_name)
+output_hdf(d, hdf_shape, z_crop, data_name)
