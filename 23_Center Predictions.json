@@ -1,0 +1,1939 @@
+{
+    "00": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Read DREAM.3D Data File",
+        "Filter_Name": "DataContainerReader",
+        "Filter_Uuid": "{043cbde5-3878-5718-958f-ae75714df0df}",
+        "InputFile": "C:\\Users\\al4g2\\Documents\\_Optimal-Training-Set\\19b_Part-1 Cylinder.dream3d",
+        "InputFileDataContainerArrayProxy": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Binomial Blur CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Binomial Blur TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Binomial Blur Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Black Top Hat CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Black Top Hat TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Black Top Hat Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Bounded Reciprocal CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Bounded Reciprocal TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Bounded Reciprocal Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Box Mean CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Box Mean TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Box Mean Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CT Mask",
+                                    "Object Type": "DataArray<bool>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "CTB1",
+                                    "Object Type": "DataArray<uint8_t>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CoolingRate",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Density",
+                                    "Object Type": "DataArray<float>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Extended Center Mask",
+                                    "Object Type": "DataArray<uint8_t>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Convex CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Convex TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Convex Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Maxima CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Maxima TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Maxima Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Minima CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Minima TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "H Minima Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Laser Power",
+                                    "Object Type": "DataArray<float>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Log10 CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Log10 TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Log10 Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "MaxTemp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median CR 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median CR 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median CR 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median TAT 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median TAT 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median TAT 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median Tp 1",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median Tp 2",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Median Tp 3",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "White Top Hat CR",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "White Top Hat TAT",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "White Top Hat Tp",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "X",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Y",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Z",
+                                    "Object Type": "DataArray<double>",
+                                    "Path": "/DataContainers/Fusion/Fused Attribute Matrix",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        961
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 2,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 2,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "OverwriteExistingDataContainers": 0
+    },
+    "01": {
+        "Dataset Import Info Array": [
+            {
+                "Component Dimensions": "1",
+                "Dataset Path": "/CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4"
+            }
+        ],
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Import HDF5 Dataset",
+        "Filter_Name": "ImportHDF5Dataset",
+        "Filter_Uuid": "{9e98c3b0-5707-5a3b-b8b5-23ef83b02896}",
+        "HDF5FilePath": "C:\\Users\\al4g2\\Documents\\_Optimal-Training-Set\\22_Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4.h5",
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "02": {
+        "Dataset Import Info Array": [
+            {
+                "Component Dimensions": "1",
+                "Dataset Path": "/CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4"
+            }
+        ],
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Import HDF5 Dataset",
+        "Filter_Name": "ImportHDF5Dataset",
+        "Filter_Uuid": "{9e98c3b0-5707-5a3b-b8b5-23ef83b02896}",
+        "HDF5FilePath": "C:\\Users\\al4g2\\Documents\\_Optimal-Training-Set\\22_Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4.h5",
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "03": {
+        "Dataset Import Info Array": [
+            {
+                "Component Dimensions": "1",
+                "Dataset Path": "/CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4"
+            }
+        ],
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Import HDF5 Dataset",
+        "Filter_Name": "ImportHDF5Dataset",
+        "Filter_Uuid": "{9e98c3b0-5707-5a3b-b8b5-23ef83b02896}",
+        "HDF5FilePath": "C:\\Users\\al4g2\\Documents\\_Optimal-Training-Set\\22_Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4.h5",
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "04": {
+        "Dataset Import Info Array": [
+            {
+                "Component Dimensions": "1",
+                "Dataset Path": "/CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4"
+            }
+        ],
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Import HDF5 Dataset",
+        "Filter_Name": "ImportHDF5Dataset",
+        "Filter_Uuid": "{9e98c3b0-5707-5a3b-b8b5-23ef83b02896}",
+        "HDF5FilePath": "C:\\Users\\al4g2\\Documents\\_Optimal-Training-Set\\22_Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4.h5",
+        "SelectedAttributeMatrix": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "05": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "06": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "07": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "08": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "09": {
+        "CellAttributeMatrixPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "",
+            "Data Container Name": "Fusion"
+        },
+        "CellFeatureAttributeMatrixPath": {
+            "Attribute Matrix Name": "CellFeatureData",
+            "Data Array Name": "",
+            "Data Container Name": "ImageDataContainer"
+        },
+        "FeatureIdsArrayPath": {
+            "Attribute Matrix Name": "CellData",
+            "Data Array Name": "FeatureIds",
+            "Data Container Name": "ImageDataContainer"
+        },
+        "FilterVersion": "6.6.141",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Crop Geometry (Image)",
+        "Filter_Name": "CropImageGeometry",
+        "Filter_Uuid": "{baa4b7fe-31e5-5e63-a2cb-0bb9d844cfaf}",
+        "NewDataContainerName": {
+            "Attribute Matrix Name": "",
+            "Data Array Name": "",
+            "Data Container Name": "NewImageDataContainer"
+        },
+        "RenumberFeatures": 0,
+        "SaveAsNewDataContainer": 0,
+        "UpdateOrigin": 1,
+        "XMax": 69,
+        "XMin": 0,
+        "YMax": 84,
+        "YMin": 0,
+        "ZMax": 694,
+        "ZMin": 276
+    },
+    "10": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Convert AttributeArray Data Type",
+        "Filter_Name": "ConvertData",
+        "Filter_Uuid": "{f4ba5fa4-bb5c-5dd1-9429-0dd86d0ecb37}",
+        "OutputArrayName": "Pred Float",
+        "ScalarType": 8,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "11": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Binomial Blur Image Filter",
+        "Filter_Name": "ITKBinomialBlurImage",
+        "Filter_Uuid": "{4f51765f-ee36-52d0-96b6-f2aca3c24e7c}",
+        "NewCellArrayName": "Pred Binomial Blur",
+        "Repetitions": 25,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Float",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "12": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "13": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "REGpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        },
+        "ValleyEmphasis": 0
+    },
+    "14": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Extended Center Mask",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Binomial Blur",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Float",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "15": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Convert AttributeArray Data Type",
+        "Filter_Name": "ConvertData",
+        "Filter_Uuid": "{f4ba5fa4-bb5c-5dd1-9429-0dd86d0ecb37}",
+        "OutputArrayName": "Pred Float",
+        "ScalarType": 8,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "16": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Binomial Blur Image Filter",
+        "Filter_Name": "ITKBinomialBlurImage",
+        "Filter_Uuid": "{4f51765f-ee36-52d0-96b6-f2aca3c24e7c}",
+        "NewCellArrayName": "Pred Binomial Blur",
+        "Repetitions": 25,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Float",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "17": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "18": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        },
+        "ValleyEmphasis": 0
+    },
+    "19": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Extended Center Mask",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Binomial Blur",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Float",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "20": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Convert AttributeArray Data Type",
+        "Filter_Name": "ConvertData",
+        "Filter_Uuid": "{f4ba5fa4-bb5c-5dd1-9429-0dd86d0ecb37}",
+        "OutputArrayName": "Pred Float",
+        "ScalarType": 8,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "21": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Binomial Blur Image Filter",
+        "Filter_Name": "ITKBinomialBlurImage",
+        "Filter_Uuid": "{4f51765f-ee36-52d0-96b6-f2aca3c24e7c}",
+        "NewCellArrayName": "Pred Binomial Blur",
+        "Repetitions": 25,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Float",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "22": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "23": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        },
+        "ValleyEmphasis": 0
+    },
+    "24": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Extended Center Mask",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Binomial Blur",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Float",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "25": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Convert AttributeArray Data Type",
+        "Filter_Name": "ConvertData",
+        "Filter_Uuid": "{f4ba5fa4-bb5c-5dd1-9429-0dd86d0ecb37}",
+        "OutputArrayName": "Pred Float",
+        "ScalarType": 8,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "26": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Binomial Blur Image Filter",
+        "Filter_Name": "ITKBinomialBlurImage",
+        "Filter_Uuid": "{4f51765f-ee36-52d0-96b6-f2aca3c24e7c}",
+        "NewCellArrayName": "Pred Binomial Blur",
+        "Repetitions": 25,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Float",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "27": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Mask Image Filter",
+        "Filter_Name": "ITKMaskImage",
+        "Filter_Uuid": "{97102d65-9c32-576a-9177-c59d958bad10}",
+        "MaskCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Extended Center Mask",
+            "Data Container Name": "Fusion"
+        },
+        "NewCellArrayName": "",
+        "OutsideValue": 0,
+        "SaveAsNewArray": 0,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        }
+    },
+    "28": {
+        "FilterVersion": "2.0.867",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "ITK::Otsu Multiple Thresholds Image Filter",
+        "Filter_Name": "ITKOtsuMultipleThresholdsImage",
+        "Filter_Uuid": "{6e66563a-edcf-5e11-bc1d-ceed36d8493f}",
+        "LabelOffset": 0,
+        "NewCellArrayName": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+        "NumberOfHistogramBins": 128,
+        "NumberOfThresholds": 1,
+        "SaveAsNewArray": 1,
+        "SelectedCellArrayPath": {
+            "Attribute Matrix Name": "Fused Attribute Matrix",
+            "Data Array Name": "Pred Binomial Blur",
+            "Data Container Name": "Fusion"
+        },
+        "ValleyEmphasis": 0
+    },
+    "29": {
+        "DataArraysToRemove": {
+            "Data Containers": [
+                {
+                    "Attribute Matricies": [
+                        {
+                            "Data Arrays": [
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTB1",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "CTpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "double",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "Extended Center Mask",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Binomial Blur",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 2,
+                                    "Name": "Pred Float",
+                                    "Object Type": "float",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_0_to_970_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_286_to_342_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        419
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_100pct_Cylinder_309_to_309_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                },
+                                {
+                                    "Component Dimensions": [
+                                        1
+                                    ],
+                                    "Flag": 0,
+                                    "Name": "REGpred Part-1_Cylinder_trained_on_21_Part-2_1pct_Cylinder_LogRegCV_4",
+                                    "Object Type": "uint8_t",
+                                    "Path": "Fusion/Fused Attribute Matrix/",
+                                    "Tuple Dimensions": [
+                                        70,
+                                        85,
+                                        276
+                                    ],
+                                    "Version": 2
+                                }
+                            ],
+                            "Flag": 0,
+                            "Name": "Fused Attribute Matrix",
+                            "Type": 3
+                        }
+                    ],
+                    "Flag": 0,
+                    "Name": "Fusion",
+                    "Type": 0
+                }
+            ]
+        },
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Delete Data",
+        "Filter_Name": "RemoveArrays",
+        "Filter_Uuid": "{7b1c8f46-90dd-584a-b3ba-34e16958a7d0}"
+    },
+    "30": {
+        "FilterVersion": "2.0.259",
+        "Filter_Enabled": true,
+        "Filter_Human_Label": "Write DREAM.3D Data File",
+        "Filter_Name": "DataContainerWriter",
+        "Filter_Uuid": "{3fcd4c43-9d75-5b86-aad4-4441bc914f37}",
+        "OutputFile": "C:/Users/al4g2/Documents/_Optimal-Training-Set/23_Part-1 Center Predictions.dream3d",
+        "WriteTimeSeries": 0,
+        "WriteXdmfFile": 1
+    },
+    "PipelineBuilder": {
+        "Name": "23_Center Predictions",
+        "Number_Filters": 31,
+        "Version": 6
+    }
+}

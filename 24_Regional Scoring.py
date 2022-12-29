@@ -22,9 +22,10 @@ from MetricsReport import metrics_report
 
 # TRAINING
 trained_part = 'Part-2'
-train_size = '1'  # percentage of part section used for training
-# train_size = '99'
+train_size = '100'  # percentage of part section used for training
 trained_section = 'Cylinder'
+l1 = 286  # layer range for models trained with a specific section *note* this is just the range for trained model
+l2 = 342  # disregard if train_size <> 100
 model_type = 'LogRegCV'  # model type used for training
 features = '4'  # feature model that was used for training
 
@@ -33,36 +34,40 @@ test_part = 'Part-1'
 # test_part = 'Part-2'
 # test_section = 'Cylinder'
 # test_section = 'NomA'
-test_section = 'Center'
-# test_section = 'NomB'
+# test_section = 'Center'
+test_section = 'NomB'
 
-# array names; from DREAM.3D
-true = 'CTB1'
-pred = f'CTpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
-reg = f'REGpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
-msk = 'Extended Center Mask'
+##################################################
 
 # filename
 fname = f'23_{test_part} {test_section} Predictions'
 
-##################################################
+# array names; from DREAM.3D
+if train_size == '100':
+    model_filename = f'21_{trained_part}_{train_size}pct_{trained_section}_{l1}_to_{l2}_{model_type}_{features}'
+else:
+    model_filename = f'21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
+pred = f'CTpred {test_part}_Cylinder_trained_on_{model_filename}'
+reg = f'REGpred {test_part}_Cylinder_trained_on_{model_filename}'
+true = 'CTB1'
+msk = 'Extended Center Mask'
+
+# pred = f'CTpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
+# reg = f'REGpred {test_part}_Cylinder_trained_on_21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
 
 
 # read dream3d file as hdf
 f = h5py.File(f'{fname}.dream3d', 'r')
-# CTB1: True Defects
-truedefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{true}']
-# Predicted Defects array
-preddefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{pred}']
-# Regional Scoring array
-regionaldefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{reg}']
-# Mask array
-mask = f[f'DataContainers/Fusion/Fused Attribute Matrix/{msk}']
+preddefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{pred}']  # Predicted Defects array
+regionaldefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{reg}']  # Regional Scoring array
+truedefects = f[f'DataContainers/Fusion/Fused Attribute Matrix/{true}']  # CTB1: True Defects
+mask = f[f'DataContainers/Fusion/Fused Attribute Matrix/{msk}']  # Mask array
+
 
 # select all 3 dimensions for a 3D array
-truedefects = np.array(truedefects[:, :, :, 0])
 preddefects = np.array(preddefects[:, :, :, 0])
 regionaldefects = np.array(regionaldefects[:, :, :, 0])
+truedefects = np.array(truedefects[:, :, :, 0])
 mask = np.array(mask[:, :, :, 0])
 
 
@@ -84,7 +89,7 @@ pred = df.loc[:, 'pred'].values
 region = df.loc[:, 'region'].values
 
 print(f'test part: {test_part}_{test_section}')
-print('model name: ', f'21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}.pkl')
+print('model name: ', model_filename)
 
 
 print('True shape: %s' % Counter(true))
