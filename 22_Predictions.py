@@ -82,7 +82,7 @@ slcthresh = [0.85]
 
 ##################################################
 
-# data name for export and chart titles
+# print the name of the test part and test section
 print(f'test part: {test_part}_{test_section}')
 
 # starting layer of each test part/section combo
@@ -91,13 +91,14 @@ z_crop = crop_layer(test_part, test_section)
 # Load trained model from file
 if train_size == '100':
     model_filename = f'21_{trained_part}_{train_size}pct_{trained_section}_{l1}_to_{l2}_{model_type}_{features}'
-    data_name = f'{test_part}_{test_section}_trained_on_{model_filename}'
 else:
     model_filename = f'21_{trained_part}_{train_size}pct_{trained_section}_{model_type}_{features}'
-    data_name = f'{test_part}_{test_section}_trained_on_{model_filename}'
 with open(f'{model_filename}.pkl', 'rb') as file:
     model = pickle.load(file)
 print('model name: ', model_filename)
+
+# data name for export and chart titles
+data_name = f'{test_part}_{test_section}_trained_on_{model_filename}'
 
 
 # load test dataset
